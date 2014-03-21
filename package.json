@@ -1,0 +1,22 @@
+{
+  "name": "reqwestify",
+  "description": "Drop-in reqwest alias for request for the browser",
+  "version": "0.1.0",
+  "homepage": "https://github.com/bevacqua/reqwestify",
+  "author": {
+    "name": "Nicolas Bevacqua",
+    "email": "ng@bevacqua.io",
+    "url": "http://bevacqua.io"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/bevacqua/reqwestify.git"
+  },
+  "keywords": [
+    "request",
+    "reqwest",
+    "browserify",
+    "shim"
+  ]
+}
