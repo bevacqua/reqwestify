@@ -10,6 +10,6 @@ module.exports = function (opts, cb) {
   opts.error = cb;
 
   return reqwest(opts, function (res) {
-  	cb(null, res, res.body);
+  	cb(null, { body: res }, res);
   });
 };
