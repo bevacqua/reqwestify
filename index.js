@@ -4,8 +4,8 @@ module.exports = function (opts, cb) {
   if (typeof opts === 'string') {
   	opts = { url: opts.url };
   }
-  if (!opts.headers || !opts.headers['User-Agent']) {
-  	opts.headers['User-Agent'] = 'request';
+  if (opts.headers) {
+  	delete opts.headers['User-Agent'];
   }
   opts.error = cb;
 
