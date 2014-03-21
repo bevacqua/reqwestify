@@ -28,5 +28,20 @@ module.exports = function (done) {
 node quote
 ```
 
+Then browserify using the `'reqwestify:request'` alias. Example using Grunt and `grunt-browserify`.
+
+```js
+browserify: {
+  app: {
+    files: {
+      'src/build/bundle.js': ['src/*.js']
+    },
+    options: {
+      alias: ['reqwestify:request'],
+    }
+  },
+}
+```
+
 [1]: https://github.com/ded/reqwest
 [2]: https://github.com/mikeal/request
